@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dosis Libertador · Moda, calzado y talles especiales</title>
+<meta name="description" content="Dosis — Desde 2010 vistiendo a Libertador General San Martín, Jujuy. Moda, calzado y talles especiales para toda la familia.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== TICKER ===== -->
+  <div class="sticky">
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>3 Y 6 CUOTAS SIN INTERÉS</span><span>20% OFF EN EFECTIVO, TRANSFERENCIA O DÉBITO</span><span>GO CUOTAS DISPONIBLE</span><span>CRÉDITO PERSONAL CON DNI</span>
+        <span>3 Y 6 CUOTAS SIN INTERÉS</span><span>20% OFF EN EFECTIVO, TRANSFERENCIA O DÉBITO</span><span>GO CUOTAS DISPONIBLE</span><span>CRÉDITO PERSONAL CON DNI</span>
+      </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="topbar">
+      <button class="logo" onclick="goHome()" aria-label="Inicio Dosis">
+        <span class="word">DOSIS</span><span class="dot"></span>
+      </button>
+      <button class="cart-btn" onclick="goCart()">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FCFAF4" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4" fill="#FCFAF4" stroke="none"/><circle cx="18" cy="20" r="1.4" fill="#FCFAF4" stroke="none"/></svg>
+        <span>Carrito</span>
+        <span class="cart-pill" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <!-- ===== CATEGORÍAS ===== -->
+    <nav class="catbar" id="catbar"></nav>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- ===== PANTALLA: INICIO ===== -->
+  <!-- ============================================================= -->
+  <section id="screen-home" class="screen">
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text">
+          <div class="eyebrow-row">
+            <span class="eyebrow">Dosis Libertador</span>
+            <span class="badge-since">Desde 2010</span>
+          </div>
+          <h1>Desde 2010 vistiendo a Libertador</h1>
+          <p>Moda, calzado y talles especiales para toda la familia.</p>
+          <div class="hero-cta">
+            <button class="btn btn-dorado" onclick="goShop()">Ver productos</button>
+            <a class="btn btn-ghost" id="hero-wa" target="_blank" rel="noopener noreferrer">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="#FCFAF4"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="imagenes/fachada-dosis.png" alt="Frente del local Dosis en Tucumán 314, Libertador General San Martín">
+          <span class="img-tag">Tucumán 314 · Jujuy</span>
+        </div>
+      </section>
+
+      <!-- PROMOS -->
+      <section class="promos">
+        <div class="promo"><div class="tag">3-6</div><strong>Cuotas sin interés</strong><span>3 y 6 cuotas sin interés con tarjetas de crédito.</span></div>
+        <div class="promo"><div class="tag">20%</div><strong>Descuento de contado</strong><span>20% OFF en efectivo, transferencia o débito.</span></div>
+        <div class="promo"><div class="tag">GC</div><strong>Go Cuotas</strong><span>Pagá en cuotas con tu tarjeta de débito.</span></div>
+        <div class="promo"><div class="tag">DNI</div><strong>Crédito personal</strong><span>Llevá tus prendas con crédito personal, solo con DNI.</span></div>
+      </section>
+
+      <!-- TALLES ESPECIALES -->
+      <section class="especiales">
+        <div class="glow g1"></div>
+        <div class="glow g2"></div>
+        <div class="especiales-grid">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <span class="eyebrow">Inclusión Dosis</span>
+            <h2>Talles<br>Especiales</h2>
+            <p class="frase">"La moda también tiene tu talle."</p>
+            <a class="btn btn-dorado" id="esp-wa" target="_blank" rel="noopener noreferrer" style="align-self:flex-start;padding:14px 22px;min-height:0">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#181410"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4z"/></svg>
+              Consultar disponibilidad por WhatsApp
+            </a>
+          </div>
+          <div class="esp-cards">
+            <div class="esp-card"><span class="num">62</span><span class="lbl">Jeans hasta talle 62</span></div>
+            <div class="esp-card"><span class="num">5XL</span><span class="lbl">Prendas hasta 5XL</span></div>
+            <div class="esp-card">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+              <span class="lbl">Amplia variedad de modelos</span>
+            </div>
+            <div class="esp-card">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+              <span class="lbl">Atención personalizada</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ¿POR QUÉ ELEGIR DOSIS? -->
+      <section class="block">
+        <div class="sec-head">
+          <span class="kicker">Confianza Dosis</span>
+          <h2>¿Por qué elegir Dosis?</h2>
+        </div>
+        <div class="porque-grid">
+          <div class="feature"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><strong>Desde 2010 de trayectoria</strong><span class="d">Una marca consolidada en Libertador General San Martín.</span></div>
+          <div class="feature"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 5H8z"/><path d="M8 8v13h8V8"/><path d="M10 13h4"/></svg></span><strong>Jeans hasta talle 62</strong><span class="d">Denim para todos los cuerpos, con calce moderno.</span></div>
+          <div class="feature"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l3-3h8l3 3-3 2v11H8V9z"/></svg></span><strong>Prendas hasta 5XL</strong><span class="d">Talles especiales en remeras, buzos y camperas.</span></div>
+          <div class="feature"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M7 15h3"/></svg></span><strong>Crédito personal con DNI</strong><span class="d">Llevá tus prendas hoy, solo presentando tu DNI.</span></div>
+          <div class="feature"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><strong>3 y 6 cuotas sin interés</strong><span class="d">Financiación con tarjeta y Go Cuotas con débito.</span></div>
+          <div class="feature"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></span><strong>Atención personalizada</strong><span class="d">Te asesoramos en el local y por WhatsApp.</span></div>
+        </div>
+      </section>
+
+      <!-- MEDIOS DE PAGO -->
+      <section class="dark-section">
+        <div class="sec-head"><span class="kicker" style="color:#E3C268">Medios de pago</span><h2 style="color:#FCFAF4">Comprá como te quede más cómodo</h2></div>
+        <div class="pagos-grid">
+          <div class="pago"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></span><strong>3 y 6 cuotas sin interés</strong><span class="d">Financiá tu compra con tarjeta de crédito, sin recargos.</span></div>
+          <div class="pago gold"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="7.5" cy="7.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg></span><strong>20% de descuento</strong><span class="d">En efectivo, transferencia o débito. Pagá menos al contado.</span></div>
+          <div class="pago"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><strong>Go Cuotas disponible</strong><span class="d">Pagá en cuotas con tu tarjeta de débito, rápido y simple.</span></div>
+          <div class="pago"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M13 10h5M13 14h5M5 16c.8-1.6 2.4-2 4-2s3.2.4 4 2"/></svg></span><strong>Crédito personal con DNI</strong><span class="d">Llevá tus prendas hoy presentando solo tu DNI.</span></div>
+        </div>
+      </section>
+
+      <!-- BUZOS DESTACADOS -->
+      <section class="dark-section">
+        <div class="sec-head-row">
+          <div class="sec-head" style="margin-bottom:0"><span class="kicker" style="color:#E3C268">Temporada invierno</span><h2 style="color:#FCFAF4">Buzos destacados</h2></div>
+          <button class="link-gold" onclick="goCat('Buzos')">Ver todos →</button>
+        </div>
+        <div class="grid wide" id="grid-buzos"></div>
+      </section>
+
+      <!-- DESTACADOS -->
+      <section class="block">
+        <div class="sec-head-row">
+          <h2 style="margin:0;font-size:22px;font-weight:800;letter-spacing:-.01em">Destacados</h2>
+          <button class="link-gold dark" onclick="goShop()">Ver todo →</button>
+        </div>
+        <div class="grid" id="grid-featured"></div>
+      </section>
+
+      <!-- INFORMACIÓN COMERCIAL -->
+      <section class="dark-section">
+        <div class="info-head">
+          <span class="kicker">Comprá con tranquilidad</span>
+          <h2>Dosis te acompaña en cada compra</h2>
+          <p>Comprá con confianza, seguridad y la atención que nos caracteriza desde 2010.</p>
+        </div>
+        <div class="info-grid">
+
+          <div class="info-card">
+            <div class="ic-head"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h3"/></svg></span><strong>Formas de pago</strong></div>
+            <div class="info-list">
+              <div class="info-row"><span class="ck">✓</span><span class="t">Efectivo</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Transferencia bancaria</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Tarjeta de débito</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Tarjetas de crédito</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">3 y 6 cuotas sin interés según promociones vigentes</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Go Cuotas</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Crédito personal con DNI</span></div>
+            </div>
+            <div class="info-pill"><span>Próximamente: pagos online con tarjeta</span></div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-head"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v9H3z"/><path d="M14 9h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span><strong>Envíos</strong></div>
+            <div class="info-list">
+              <div class="info-row"><span class="ck">✓</span><span class="t">Envíos a todo el país</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Envíos locales en Libertador</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Despachos por transporte o correo</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Seguimiento del pedido</span></div>
+            </div>
+            <div class="info-pill"><span>Envíos a todo el país coordinados por WhatsApp</span></div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-head"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><strong>Cambios y garantías</strong></div>
+            <div class="info-list">
+              <div class="info-row"><span class="ck">✓</span><span class="t">Cambios dentro de los 30 días</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Presentar ticket o comprobante</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">El producto debe estar en perfecto estado</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Se respeta el valor abonado al momento de la compra</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Garantía por defectos de fábrica</span></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-head"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l5-5 13 13-5 5z"/><path d="M8 7l2 2M11 10l2 2M14 13l2 2"/></svg></span><strong>Talles especiales</strong></div>
+            <div class="info-list">
+              <div class="info-row"><span class="ck">✓</span><span class="t">Jeans hasta talle 62</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Prendas hasta 5XL</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Amplia variedad de modelos</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Asesoramiento de talles para cada cuerpo</span></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-head"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17h20v-2c0-1-1-2-3-2l-5-3-2-3H4l-1 6z"/><path d="M2 17v2h20v-2"/></svg></span><strong>Calzado</strong></div>
+            <div class="info-list">
+              <div class="info-row"><span class="ck">✓</span><span class="t">Calzado urbano y deportivo</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Las mejores marcas</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Numeración para toda la familia</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Asesoramiento de calce</span></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="ic-head"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.2 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg></span><strong>Atención personalizada</strong></div>
+            <div class="info-list">
+              <div class="info-row"><span class="ck">✓</span><span class="t">Asesoramiento por WhatsApp</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Atención en Tucumán 314</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Ayuda para elegir talle</span></div>
+              <div class="info-row"><span class="ck">✓</span><span class="t">Atención personalizada para toda la familia</span></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- NUESTRA HISTORIA / NUESTRO LOCAL -->
+      <section class="historia" id="nuestro-local">
+        <div class="historia-grid">
+          <div class="historia-img">
+            <img src="imagenes/fachada-dosis.png" alt="Frente del local Dosis en Tucumán 314, Libertador General San Martín">
+            <span class="img-tag">Tucumán 314 · Jujuy</span>
+          </div>
+          <div class="historia-text">
+            <span class="kicker">Nuestra historia · Nuestro local</span>
+            <h2>DOSIS <span class="gold">— Desde 2010</span></h2>
+            <p class="lead">Desde 2010, Dosis acompaña a las familias de Libertador ofreciendo indumentaria, calzado y las mejores marcas para toda la familia, combinando atención personalizada, calidad y las últimas tendencias.</p>
+            <div class="checks">
+              <div class="check"><span class="b">✓</span><span class="t">Desde 2010 junto a las familias de Libertador</span></div>
+              <div class="check"><span class="b">✓</span><span class="t">Moda y calzado para toda la familia</span></div>
+              <div class="check"><span class="b">✓</span><span class="t">Atención personalizada</span></div>
+              <div class="check"><span class="b">✓</span><span class="t">3 y 6 cuotas sin interés</span></div>
+              <div class="check"><span class="b">✓</span><span class="t">20% de descuento en efectivo, transferencia o débito</span></div>
+            </div>
+            <div class="horario">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div style="display:flex;flex-direction:column;gap:1px">
+                <span class="ht">Horarios · Lunes a Sábados</span>
+                <span class="hh">09:00 a 13:00 hs · 18:00 a 22:00 hs</span>
+              </div>
+            </div>
+            <p class="quote">"Más de una década vistiendo a las familias de Libertador."</p>
+            <div class="historia-cta">
+              <a class="btn btn-dorado" id="local-wa" target="_blank" rel="noopener noreferrer">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="#181410"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4z"/></svg>
+                Consultar por WhatsApp
+              </a>
+              <a class="btn btn-outline" href="https://maps.google.com/?q=Tucumán+314+Libertador+General+San+Martín+Jujuy" target="_blank" rel="noopener noreferrer">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Cómo llegar
+              </a>
+            </div>
+            <div class="social-row">
+              <span class="s-lbl">Seguinos</span>
+              <a class="soc" href="https://instagram.com/Dosis.jeans" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#E3C268" stroke="none"/></svg></a>
+              <a class="soc" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#E3C268"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v7h3v-7H16l.5-3h-3V9.5C13.5 9.2 13.7 9 14 9z"/></svg></a>
+              <a class="soc" id="social-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="#E3C268"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4zm-3 4.2c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.6 4 3.5 2 .8 2.4.6 2.8.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3l-1.4-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.4-.5-.7-1-.8-1.2-.1-.2 0-.3.1-.4l.4-.5c.1-.1.1-.3.2-.4 0-.2 0-.3 0-.4l-.7-1.6c-.1-.4-.3-.4-.5-.4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- ===== PANTALLA: CATEGORÍA ===== -->
+  <section id="screen-category" class="screen" hidden>
+    <div class="wrap">
+      <div class="cat-head">
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <span class="kicker">Catálogo</span>
+          <h1 id="cat-title">Toda la tienda</h1>
+        </div>
+        <span class="cat-count" id="cat-count">0 productos</span>
+      </div>
+      <div class="grid" id="grid-category" style="padding-bottom:8px"></div>
+    </div>
+  </section>
+
+  <!-- ===== PANTALLA: DETALLE PRODUCTO ===== -->
+  <section id="screen-product" class="screen" hidden>
+    <div class="wrap-narrow" id="product-body"></div>
+  </section>
+
+  <!-- ===== PANTALLA: CARRITO ===== -->
+  <section id="screen-cart" class="screen" hidden>
+    <div class="wrap-cart">
+      <h1 class="cart-h1">Tu carrito</h1>
+      <div class="cart-note">
+        <span class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E3C268" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <span class="t">Compra online próximamente — coordiná tu pedido por WhatsApp.</span>
+      </div>
+      <div id="cart-body"></div>
+    </div>
+  </section>
+
+  <!-- ===== PANTALLA: CONTACTO ===== -->
+  <section id="screen-contact" class="screen" hidden>
+    <div class="wrap-cart">
+      <div class="contact-head">
+        <span class="kicker">Visitanos</span>
+        <h1>Local Dosis</h1>
+      </div>
+      <div class="map-box">
+        <div class="map-pin">
+          <span class="d">D</span>
+          <div style="display:flex;flex-direction:column"><strong style="font-size:14px">Tucumán 314</strong><span style="font-size:12px;color:#6b6b72">Lib. Gral. San Martín, Jujuy</span></div>
+        </div>
+      </div>
+      <div class="contact-cols">
+        <div class="contact-card">
+          <strong>Dirección</strong>
+          <span class="addr">Tucumán 314<br>Libertador General San Martín<br>Jujuy, Argentina</span>
+          <a class="btn btn-wa" id="contact-wa" target="_blank" rel="noopener noreferrer" style="margin-top:4px;border-radius:11px;padding:13px;min-height:0;font-size:14px">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4z"/></svg>
+            Escribinos por WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=Tucumán+314+Libertador+General+San+Martín+Jujuy" target="_blank" rel="noopener noreferrer" style="border-radius:11px;padding:13px;min-height:0;font-size:14px;border-color:#d8d8dc;color:#181410">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2962F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cómo llegar
+          </a>
+        </div>
+        <div class="contact-card">
+          <strong>Seguinos</strong>
+          <a class="soc-link" href="https://instagram.com/Dosis.jeans" target="_blank" rel="noopener noreferrer"><span class="ic">IG</span>@Dosis.jeans</a>
+          <a class="soc-link" href="#" target="_blank" rel="noopener noreferrer"><span class="ic">FB</span>Dosis Indumentaria</a>
+          <a class="soc-link" href="#" target="_blank" rel="noopener noreferrer"><span class="ic" style="font-size:11px">TT</span>@dosis.jeans</a>
+        </div>
+      </div>
+      <div class="pay-band">
+        <strong>Medios de pago</strong>
+        <span>3 y 6 cuotas sin interés · 20% OFF de contado · Go Cuotas · Crédito personal solo con DNI.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAB WHATSAPP ===== -->
+  <a class="fab" id="fab-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Dosis">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4zm-3 4.2c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.6 4 3.5 2 .8 2.4.6 2.8.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3l-1.4-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.4-.5-.7-1-.8-1.2-.1-.2 0-.3.1-.4l.4-.5c.1-.1.1-.3.2-.4 0-.2 0-.3 0-.4l-.7-1.6c-.1-.4-.3-.4-.5-.4z"/></svg>
+  </a>
+
+  <!-- ===== BOTTOM NAV ===== -->
+  <nav class="bottomnav" id="bottomnav">
+    <button data-screen="home" onclick="goHome()"><span class="ic">⌂</span>Inicio</button>
+    <button data-screen="category" onclick="goShop()"><span class="ic">▦</span>Tienda</button>
+    <button data-screen="cart" onclick="goCart()"><span class="ic">◰</span>Carrito</button>
+    <button data-screen="contact" onclick="goContact()"><span class="ic">✉</span>Contacto</button>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
