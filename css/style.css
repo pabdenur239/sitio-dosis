@@ -1,0 +1,354 @@
+/* ===========================================================
+   DOSIS — Ecommerce estático
+   Estilo negro y dorado · Libertador General San Martín, Jujuy
+   =========================================================== */
+
+:root{
+  --negro:#181410;
+  --negro-2:#221C15;
+  --negro-3:#26201A;
+  --borde:#362C1E;
+  --borde-2:#4a4034;
+  --dorado:#C2962F;
+  --dorado-claro:#E3C268;
+  --crema:#FCFAF4;
+  --fondo:#F4EEE2;
+  --fondo-2:#F5ECD4;
+  --texto:#181410;
+  --texto-claro:#c9c1b3;
+  --texto-tenue:#a89f91;
+  --linea:#e6e6e8;
+  --verde-wa:#25d366;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color:var(--texto);
+  background:var(--fondo);
+  min-height:100vh;
+  padding-bottom:96px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font-family:inherit}
+
+::-webkit-scrollbar{height:7px;width:7px}
+::-webkit-scrollbar-thumb{background:#d8d2c5;border-radius:4px}
+
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- contenedores ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.wrap-narrow{max-width:1080px;margin:0 auto;padding:16px}
+.wrap-cart{max-width:820px;margin:0 auto;padding:16px}
+.screen[hidden]{display:none}
+section.block{margin-top:26px}
+
+/* ---------- ticker promos ---------- */
+.ticker{
+  background:var(--dorado);color:var(--negro);overflow:hidden;height:34px;
+  display:flex;align-items:center;font-size:12px;font-weight:700;letter-spacing:.06em;
+}
+.ticker-track{
+  display:flex;gap:44px;white-space:nowrap;padding-left:44px;
+  animation:mq 22s linear infinite;
+}
+
+/* ---------- top chrome ---------- */
+.sticky{position:sticky;top:0;z-index:60}
+.topbar{
+  background:var(--negro);color:var(--crema);
+  display:flex;align-items:center;gap:14px;padding:14px 20px;
+}
+.logo{
+  background:none;border:none;color:var(--crema);cursor:pointer;
+  display:flex;align-items:baseline;gap:2px;padding:0;
+}
+.logo .word{font-size:24px;font-weight:800;letter-spacing:.16em}
+.logo .dot{width:7px;height:7px;border-radius:50%;background:var(--dorado);display:inline-block;transform:translateY(-2px)}
+.cart-btn{
+  margin-left:auto;position:relative;background:var(--negro-2);border:1px solid var(--borde);
+  color:var(--crema);cursor:pointer;border-radius:10px;padding:9px 12px;
+  display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;
+}
+.cart-pill{
+  background:var(--dorado);color:var(--negro);border-radius:20px;min-width:19px;height:19px;
+  display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;padding:0 5px;
+}
+
+/* ---------- barra de categorías ---------- */
+.catbar{
+  background:var(--crema);border-bottom:1px solid var(--linea);
+  display:flex;gap:8px;overflow-x:auto;padding:11px 16px;scrollbar-width:none;
+}
+.catbar::-webkit-scrollbar{display:none}
+.chip{
+  flex:none;background:var(--fondo);border:1px solid var(--linea);color:var(--negro);
+  cursor:pointer;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600;white-space:nowrap;
+  transition:.15s;
+}
+.chip:hover,.chip.active{background:var(--fondo-2);border-color:var(--dorado);color:var(--dorado)}
+
+/* ---------- botones genéricos ---------- */
+.btn{
+  border:none;cursor:pointer;border-radius:11px;font-size:15px;font-weight:800;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;
+  min-height:52px;padding:0 24px;transition:.15s;
+}
+.btn-dorado{background:var(--dorado);color:var(--negro)}
+.btn-dorado:hover{background:#9C7620}
+.btn-negro{background:var(--negro);color:var(--crema)}
+.btn-negro:hover{background:var(--dorado);color:var(--negro)}
+.btn-ghost{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:var(--crema)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-wa{background:var(--verde-wa);color:#fff}
+
+/* ---------- HERO ---------- */
+.hero{
+  margin-top:8px;border-radius:18px;overflow:hidden;background:var(--negro);color:var(--crema);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+.hero-text{padding:40px 34px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.eyebrow-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--dorado-claro);text-transform:uppercase}
+.badge-since{background:var(--dorado);color:var(--negro);font-size:10px;font-weight:800;letter-spacing:.08em;padding:4px 10px;border-radius:999px;text-transform:uppercase}
+.hero-text h1{margin:0;font-size:46px;line-height:1.02;font-weight:800;letter-spacing:-.02em}
+.hero-text p{margin:0;font-size:19px;color:#c7c7cc;font-weight:500}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.hero-img{position:relative;min-height:340px;overflow:hidden}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.img-tag{position:absolute;bottom:14px;left:14px;background:var(--dorado);color:var(--negro);font-size:11px;font-weight:800;letter-spacing:.05em;padding:7px 12px;border-radius:999px;text-transform:uppercase}
+
+/* ---------- PROMOS ---------- */
+.promos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.promo{background:var(--crema);border:1px solid var(--linea);border-radius:14px;padding:18px 16px;display:flex;flex-direction:column;gap:6px}
+.promo .tag{width:34px;height:34px;border-radius:9px;background:var(--fondo-2);color:var(--dorado);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.promo strong{font-size:15px;font-weight:800;letter-spacing:-.01em}
+.promo span{font-size:13px;color:#6b6b72;line-height:1.35}
+
+/* ---------- TALLES ESPECIALES ---------- */
+.especiales{margin-top:18px;position:relative;border-radius:20px;overflow:hidden;background:var(--negro);color:var(--crema);padding:38px 30px}
+.glow{position:absolute;border-radius:50%;pointer-events:none}
+.glow.g1{top:-70px;right:-50px;width:240px;height:240px;background:radial-gradient(circle,rgba(194,150,47,.35),transparent 70%)}
+.glow.g2{bottom:-90px;left:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(194,150,47,.18),transparent 70%)}
+.especiales-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center}
+.especiales h2{margin:0;font-size:38px;font-weight:800;letter-spacing:-.025em;line-height:1.04}
+.frase{margin:0;font-size:20px;font-weight:700;color:var(--dorado-claro);font-style:italic;letter-spacing:-.01em}
+.esp-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.esp-card{background:var(--negro-3);border:1px solid var(--borde);border-radius:14px;padding:18px 16px;display:flex;flex-direction:column;gap:6px}
+.esp-card .num{font-size:32px;font-weight:800;color:var(--dorado-claro);line-height:1}
+.esp-card span.lbl{font-size:13px;color:var(--texto-claro);font-weight:600;line-height:1.35}
+
+/* ---------- secciones título ---------- */
+.sec-head{display:flex;flex-direction:column;gap:5px;margin-bottom:16px}
+.sec-head .kicker{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--dorado);text-transform:uppercase}
+.sec-head h2{margin:0;font-size:24px;font-weight:800;letter-spacing:-.01em}
+.sec-head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.link-gold{background:none;border:none;color:var(--dorado-claro);cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap}
+.link-gold.dark{color:var(--dorado)}
+
+/* ---------- ¿POR QUÉ DOSIS? ---------- */
+.porque-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.feature{background:var(--negro);color:var(--crema);border:1px solid var(--borde);border-radius:14px;padding:20px 18px;display:flex;flex-direction:column;gap:11px}
+.feature .ico{width:42px;height:42px;border-radius:11px;background:var(--negro-3);display:flex;align-items:center;justify-content:center}
+.feature strong{font-size:15px;font-weight:800;letter-spacing:-.01em}
+.feature span.d{font-size:13px;color:var(--texto-tenue);line-height:1.45}
+
+/* ---------- MEDIOS DE PAGO ---------- */
+.dark-section{margin-top:26px;border-radius:20px;background:var(--negro);padding:32px 24px}
+.pagos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.pago{background:var(--crema);border-radius:14px;padding:20px 18px;display:flex;flex-direction:column;gap:11px}
+.pago.gold{background:var(--dorado)}
+.pago .ico{width:44px;height:44px;border-radius:11px;background:var(--negro);display:flex;align-items:center;justify-content:center}
+.pago strong{font-size:16px;font-weight:800;letter-spacing:-.01em;color:var(--negro)}
+.pago span.d{font-size:13px;color:#6b6357;line-height:1.45}
+.pago.gold span.d{color:#3A2F14}
+
+/* ---------- GRIDS de productos ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.grid.wide{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+
+/* tarjeta clara */
+.card{background:var(--crema);border:1px solid var(--linea);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card-imgbtn{border:none;padding:0;cursor:pointer;background:none;position:relative;display:block}
+.card-imgbtn img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top}
+.ph{aspect-ratio:3/4;background:repeating-linear-gradient(45deg,#ececef 0 14px,#f5f5f7 14px 28px);display:flex;align-items:flex-end;justify-content:center;padding:10px}
+.ph span{font-family:'Courier New',monospace;font-size:10px;color:#9a9aa0;letter-spacing:.04em}
+.badge{position:absolute;top:10px;left:10px;background:var(--dorado);color:var(--negro);font-size:10px;font-weight:800;letter-spacing:.04em;padding:5px 9px;border-radius:999px;text-transform:uppercase}
+.card-body{padding:12px 12px 13px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-name{text-align:left;background:none;border:none;padding:0;cursor:pointer;font-size:14px;font-weight:700;color:var(--negro);line-height:1.25}
+.card-talles{font-size:11px;color:#9a9aa0;font-weight:600}
+.card-price{display:flex;align-items:baseline;gap:8px;margin-top:auto}
+.card-price .price{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.price-old{font-size:12px;color:#b0b0b6;text-decoration:line-through}
+.card-actions{display:flex;gap:7px;margin-top:3px}
+.btn-wa-sm{flex:1;background:var(--verde-wa);color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:5px;border-radius:10px;padding:10px;font-size:12px;font-weight:800}
+.btn-add{width:42px;border:1px solid #d8d8dc;background:var(--crema);border-radius:10px;cursor:pointer;font-size:20px;font-weight:700;color:var(--dorado);line-height:1}
+
+/* tarjeta oscura (buzos) */
+.card-dark{background:var(--negro-2);border:1px solid var(--borde);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card-dark .card-imgbtn img{aspect-ratio:4/5}
+.phd{aspect-ratio:4/5;background:repeating-linear-gradient(45deg,#2a231b 0 16px,#322a20 16px 32px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:14px}
+.phd span{font-family:'Courier New',monospace;font-size:10px;color:var(--texto-tenue);letter-spacing:.04em;text-align:center;font-weight:700}
+.card-dark .card-body{padding:15px 15px 16px;gap:9px}
+.card-dark .card-name{font-size:16px;color:var(--crema)}
+.card-dark .card-price .price{font-size:22px;color:var(--dorado-claro)}
+.card-dark .card-talles{color:var(--texto-tenue);font-size:12px}
+.btn-wa-gold{margin-top:4px;background:var(--dorado);color:var(--negro);text-decoration:none;display:flex;align-items:center;justify-content:center;gap:7px;border-radius:11px;padding:12px;font-size:13px;font-weight:800}
+
+/* ---------- INFO COMERCIAL ---------- */
+.info-head{text-align:center;display:flex;flex-direction:column;gap:7px;align-items:center;margin-bottom:22px}
+.info-head .kicker{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--dorado-claro);text-transform:uppercase}
+.info-head h2{margin:0;font-size:26px;font-weight:800;letter-spacing:-.01em;color:var(--crema)}
+.info-head p{margin:0;font-size:15px;color:var(--texto-tenue);font-weight:500;max-width:540px;line-height:1.5}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.info-card{background:var(--negro-2);border:1px solid var(--borde);border-radius:16px;padding:22px 20px;display:flex;flex-direction:column;gap:13px}
+.info-card .ic-head{display:flex;align-items:center;gap:11px}
+.info-card .ic-head .ico{width:40px;height:40px;flex:none;border-radius:11px;background:var(--negro-3);display:flex;align-items:center;justify-content:center}
+.info-card .ic-head strong{font-size:14px;font-weight:800;letter-spacing:.02em;color:var(--crema);text-transform:uppercase}
+.info-list{display:flex;flex-direction:column;gap:7px}
+.info-row{display:flex;gap:8px;align-items:flex-start}
+.info-row .ck{color:var(--dorado);font-weight:800;font-size:13px;line-height:1.5}
+.info-row span.t{font-size:13px;color:var(--texto-claro);line-height:1.5}
+.info-pill{margin-top:auto;padding-top:4px}
+.info-pill span{display:inline-block;background:var(--negro-3);border:1px solid var(--borde-2);color:var(--dorado-claro);font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:5px 9px;border-radius:999px}
+
+/* ---------- NUESTRA HISTORIA ---------- */
+.historia{margin-top:26px;border-radius:20px;overflow:hidden;background:var(--negro);color:var(--crema)}
+.historia-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.historia-img{position:relative;min-height:260px}
+.historia-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.historia-img .img-tag{top:14px;left:14px;bottom:auto}
+.historia-text{padding:30px;display:flex;flex-direction:column;gap:13px}
+.historia-text .kicker{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--dorado-claro);text-transform:uppercase}
+.historia-text h2{margin:0;font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.08}
+.historia-text h2 .gold{color:var(--dorado-claro)}
+.historia-text .lead{margin:0;font-size:15px;color:var(--texto-claro);line-height:1.6}
+.checks{display:flex;flex-direction:column;gap:8px;margin-top:1px}
+.check{display:flex;align-items:center;gap:10px}
+.check .b{width:22px;height:22px;flex:none;border-radius:6px;background:var(--negro-3);color:var(--dorado-claro);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px}
+.check span.t{font-size:14px;color:#e8e2d6;font-weight:600}
+.horario{display:flex;align-items:center;gap:11px;border:1px solid var(--borde);border-radius:12px;padding:11px 14px;margin-top:1px}
+.horario .ht{font-size:12px;font-weight:800;color:var(--dorado-claro);letter-spacing:.04em;text-transform:uppercase}
+.horario .hh{font-size:14px;color:#e8e2d6;font-weight:600}
+.quote{margin:1px 0 0;font-size:15px;color:var(--dorado-claro);font-style:italic;font-weight:600;line-height:1.4}
+.historia-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:5px}
+.historia-cta .btn{flex:1;min-width:150px;padding:13px;min-height:0}
+.btn-outline{background:transparent;border:1px solid var(--borde-2);color:var(--crema)}
+.btn-outline:hover{border-color:var(--dorado);color:var(--crema)}
+.social-row{display:flex;align-items:center;gap:10px;margin-top:5px}
+.social-row .s-lbl{font-size:12px;color:#9a9286;font-weight:700;letter-spacing:.04em}
+.soc{width:36px;height:36px;border-radius:10px;background:var(--negro-3);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:.15s}
+.soc:hover{background:var(--dorado)}
+
+/* ---------- CATEGORÍA ---------- */
+.cat-head{padding:20px 2px 16px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.cat-head .kicker{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--dorado);text-transform:uppercase}
+.cat-head h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.02em}
+.cat-count{color:#9a9aa0;font-size:13px;font-weight:600;white-space:nowrap}
+
+/* ---------- DETALLE PRODUCTO ---------- */
+.back-btn{background:none;border:none;color:#6b6b72;cursor:pointer;font-size:14px;font-weight:600;padding:6px 0;display:flex;align-items:center;gap:6px}
+.pd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;margin-top:8px;align-items:start}
+.pd-img{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--linea);aspect-ratio:3/4;background:repeating-linear-gradient(45deg,#e8e8eb 0 16px,#f1f1f3 16px 32px);display:flex;align-items:flex-end;justify-content:center;padding:16px}
+.pd-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.pd-img .ph-txt{font-family:'Courier New',monospace;font-size:12px;color:#9a9aa0;letter-spacing:.05em}
+.pd-info{display:flex;flex-direction:column;gap:16px}
+.pd-cat{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--dorado);text-transform:uppercase}
+.pd-info h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.pd-price{display:flex;align-items:baseline;gap:12px}
+.pd-price .price{font-size:34px;font-weight:800;letter-spacing:-.02em}
+.pd-price .price-old{font-size:17px}
+.pd-desc{margin:0;font-size:15px;color:#5a5a62;line-height:1.55}
+.pd-talles-lbl{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--negro);text-transform:uppercase}
+.talle-row{display:flex;gap:8px;flex-wrap:wrap}
+.talle{min-width:48px;border:1px solid #d8d8dc;border-radius:10px;padding:11px 10px;cursor:pointer;font-size:14px;font-weight:700;background:var(--crema);color:var(--negro)}
+.talle.sel{background:var(--negro);color:var(--crema);border-color:var(--negro)}
+.pd-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.pd-cta .btn{flex:1;min-width:150px;padding:15px;min-height:0}
+.pd-finance{border:1px solid var(--linea);border-radius:14px;padding:16px;background:var(--crema);display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.fin-row{display:flex;gap:10px;align-items:center}
+.fin-row .b{width:28px;height:28px;border-radius:7px;background:var(--fondo-2);color:var(--dorado);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800}
+.fin-row span.t{font-size:13px;color:#3a3a42;font-weight:600}
+
+/* ---------- CARRITO ---------- */
+.cart-h1{margin:14px 2px 16px;font-size:28px;font-weight:800;letter-spacing:-.02em}
+.cart-note{display:flex;align-items:center;gap:10px;background:var(--negro);border:1px solid var(--borde);border-radius:12px;padding:12px 16px;margin-bottom:14px}
+.cart-note .ico{width:30px;height:30px;flex:none;border-radius:8px;background:var(--negro-3);display:flex;align-items:center;justify-content:center}
+.cart-note span.t{font-size:13px;color:var(--dorado-claro);font-weight:700}
+.empty{background:var(--crema);border:1px solid var(--linea);border-radius:16px;padding:46px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.empty .circle{width:60px;height:60px;border-radius:50%;background:var(--fondo);display:flex;align-items:center;justify-content:center}
+.empty strong{font-size:18px;font-weight:800}
+.empty .sub{font-size:14px;color:#6b6b72}
+.cart-list{display:flex;flex-direction:column;gap:10px}
+.cart-item{background:var(--crema);border:1px solid var(--linea);border-radius:14px;padding:12px;display:flex;gap:12px;align-items:center}
+.cart-thumb{width:64px;height:80px;flex:none;border-radius:9px;overflow:hidden;background:repeating-linear-gradient(45deg,#ececef 0 12px,#f5f5f7 12px 24px);display:flex;align-items:flex-end;justify-content:center;padding:5px}
+.cart-thumb img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+.cart-thumb span{font-family:'Courier New',monospace;font-size:8px;color:#a8a8ae}
+.cart-mid{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0}
+.cart-mid strong{font-size:14px;font-weight:700;line-height:1.2}
+.cart-mid .meta{font-size:12px;color:#9a9aa0;font-weight:600}
+.qty{display:flex;align-items:center;gap:8px;margin-top:4px}
+.qty button{width:28px;height:28px;border:1px solid #d8d8dc;background:var(--crema);border-radius:8px;cursor:pointer;font-size:16px;font-weight:700;line-height:1}
+.qty .n{font-size:14px;font-weight:700;min-width:18px;text-align:center}
+.cart-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.cart-right strong{font-size:15px;font-weight:800}
+.cart-remove{background:none;border:none;color:#b0b0b6;cursor:pointer;font-size:12px;font-weight:600;text-decoration:underline}
+.summary{background:var(--negro);color:var(--crema);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.summary .row{display:flex;justify-content:space-between;font-size:15px}
+.summary .row .muted{color:#bdbdc4}
+.summary .row .gold{color:var(--dorado-claro)}
+.summary .row strong{font-weight:800}
+.summary .row strong.gold{color:var(--dorado-claro)}
+.summary hr{height:1px;background:var(--borde);border:none;width:100%;margin:0}
+.summary .small{display:flex;justify-content:space-between;font-size:13px;color:#bdbdc4}
+.summary .small .w{font-weight:700;color:var(--crema)}
+.summary .note{font-size:12px;color:#9a9aa2;text-align:center}
+.summary .btn-wa{border-radius:12px;padding:15px;min-height:0;margin-top:4px}
+
+/* ---------- CONTACTO ---------- */
+.contact-head{padding:18px 2px 16px;display:flex;flex-direction:column;gap:5px}
+.contact-head .kicker{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--dorado);text-transform:uppercase}
+.contact-head h1{margin:0;font-size:28px;font-weight:800;letter-spacing:-.02em}
+.map-box{border-radius:16px;overflow:hidden;border:1px solid var(--linea);height:200px;background:repeating-linear-gradient(45deg,#e6eaf2 0 18px,#eef1f6 18px 36px);position:relative;display:flex;align-items:center;justify-content:center}
+.map-pin{background:var(--crema);border:1px solid var(--linea);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.map-pin .d{width:30px;height:30px;border-radius:50%;background:var(--dorado);color:var(--crema);display:flex;align-items:center;justify-content:center;font-weight:800}
+.contact-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.contact-card{background:var(--crema);border:1px solid var(--linea);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.contact-card strong{font-size:15px;font-weight:800}
+.contact-card .addr{font-size:14px;color:#5a5a62;line-height:1.5}
+.soc-link{text-decoration:none;color:var(--negro);display:flex;align-items:center;gap:10px;padding:9px;border-radius:10px;background:var(--fondo);font-size:14px;font-weight:700;transition:.15s}
+.soc-link:hover{background:var(--fondo-2)}
+.soc-link .ic{width:26px;height:26px;border-radius:7px;background:var(--negro);color:var(--crema);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800}
+.pay-band{background:var(--dorado);color:var(--negro);border-radius:14px;padding:20px;margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.pay-band strong{font-size:16px;font-weight:800}
+.pay-band span{font-size:14px;color:#3A2F14;line-height:1.5}
+
+/* ---------- FAB WhatsApp ---------- */
+.fab{position:fixed;right:18px;bottom:88px;z-index:70;width:56px;height:56px;border-radius:50%;background:var(--verde-wa);box-shadow:0 8px 22px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;text-decoration:none}
+
+/* ---------- BOTTOM NAV ---------- */
+.bottomnav{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:65;background:var(--negro);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.28);display:flex;gap:4px;padding:7px 8px;width:min(420px,calc(100% - 28px))}
+.bottomnav button{flex:1;background:none;border:none;cursor:pointer;color:#9a9aa2;display:flex;flex-direction:column;align-items:center;gap:3px;padding:7px 0;font-size:10px;font-weight:700;letter-spacing:.02em}
+.bottomnav button .ic{font-size:18px;line-height:1}
+.bottomnav button.active{color:var(--crema)}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:720px){
+  .hero-text{padding:30px 22px}
+  .hero-text h1{font-size:34px}
+  .hero-text p{font-size:17px}
+  .especiales{padding:28px 20px}
+  .especiales h2{font-size:30px}
+  .dark-section{padding:26px 18px}
+  .historia-text{padding:24px 20px}
+  .historia-text h2{font-size:26px}
+  .pd-info h1{font-size:24px}
+}
+@media(max-width:420px){
+  .esp-cards{grid-template-columns:1fr 1fr}
+  .hero-text h1{font-size:30px}
+}
