@@ -164,7 +164,8 @@
       "descripcion": "Buzo Forteam negro con logo bordado. Frisa premium y terminaciones de calidad.",
       "imagenPrincipal": "imagenes/productos/buzo-forteam-negro.jpg",
       "imagenes": [
-        "imagenes/productos/buzo-forteam-negro.jpg"
+        "imagenes/productos/buzo-forteam-negro.jpg",
+        "imagenes/productos/1119900_2.jpg"
       ],
       "stock": true,
       "destacado": true,
@@ -536,31 +537,6 @@
       "imagenPrincipal": "imagenes/productos/1111210.jpg",
       "imagenes": [
         "imagenes/productos/1111210.jpg"
-      ],
-      "stock": true,
-      "destacado": false,
-      "nuevo": false,
-      "temporada": "",
-      "whatsapp": false
-    },
-    {
-      "id": "1119900",
-      "codigo": "1119900",
-      "nombre": "Buzo Forteam (C)",
-      "categoria": "Buzos",
-      "subcategoria": "",
-      "marca": "Hardfield",
-      "genero": "",
-      "talles": [],
-      "color": "",
-      "precio": 110000,
-      "precioAnterior": null,
-      "descuento": null,
-      "descripcion": "",
-      "imagenPrincipal": "imagenes/productos/1119900.jpg",
-      "imagenes": [
-        "imagenes/productos/1119900.jpg",
-        "imagenes/productos/1119900_2.jpg"
       ],
       "stock": true,
       "destacado": false,
