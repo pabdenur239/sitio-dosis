@@ -591,6 +591,36 @@
       "nuevo": false,
       "temporada": "",
       "whatsapp": false
-    }
+    },
+        {
+                "id": "3161",
+                "codigo": "3161",
+                "nombre": "Saco Estampado Azul",
+                "categoria": "Saco",
+                "subcategoria": "",
+                "marca": "Aires Modernos",
+                "genero": "",
+                "talles": [
+                          "S",
+                          "M",
+                          "L",
+                          "XL",
+                          "2XL"
+                ],
+                "color": "Azul",
+                "precio": 143000,
+                "precioAnterior": null,
+                "descuento": null,
+                "descripcion": "",
+                "imagenPrincipal": "imagenes/productos/3161.png",
+                "imagenes": [
+                          "imagenes/productos/3161.png"
+                ],
+                "stock": true,
+                "destacado": false,
+                "nuevo": false,
+                "temporada": "",
+                "whatsapp": true
+        }
   ]
 }
