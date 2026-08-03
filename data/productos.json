@@ -600,21 +600,14 @@
       "subcategoria": "",
       "marca": "Aires Modernos",
       "genero": "Mujer",
-      "talles": [
-        "S",
-        "M",
-        "L",
-        "2XL"
-      ],
+      "talles": ["S", "M", "L", "2XL"],
       "color": "Blanco",
       "precio": 138848.6,
       "precioAnterior": null,
       "descuento": null,
       "descripcion": "",
       "imagenPrincipal": "imagenes/productos/3161.svg",
-      "imagenes": [
-        "imagenes/productos/3161.svg"
-      ],
+      "imagenes": ["imagenes/productos/3161.svg"],
       "stock": true,
       "destacado": false,
       "nuevo": false,
@@ -629,20 +622,14 @@
       "subcategoria": "",
       "marca": "Panther",
       "genero": "Hombre",
-      "talles": [
-        "XL"
-      ],
+      "talles": ["XL"],
       "color": "Negro",
       "precio": 137500,
       "precioAnterior": null,
       "descuento": null,
       "descripcion": "",
       "imagenPrincipal": "imagenes/productos/22611.svg",
-      "imagenes": [
-        "imagenes/productos/22611.svg",
-        "imagenes/productos/22611_2.svg",
-        "imagenes/productos/22611_3.svg"
-      ],
+      "imagenes": ["imagenes/productos/22611.svg"],
       "stock": true,
       "destacado": false,
       "nuevo": false,
@@ -657,21 +644,14 @@
       "subcategoria": "",
       "marca": "Panther",
       "genero": "Hombre",
-      "talles": [
-        "XS",
-        "M",
-        "L",
-        "XL"
-      ],
+      "talles": ["XS", "M", "L", "XL"],
       "color": "Celeste",
       "precio": 45650,
       "precioAnterior": null,
       "descuento": null,
       "descripcion": "",
       "imagenPrincipal": "imagenes/productos/23321.svg",
-      "imagenes": [
-        "imagenes/productos/23321.svg"
-      ],
+      "imagenes": ["imagenes/productos/23321.svg"],
       "stock": true,
       "destacado": false,
       "nuevo": false,
@@ -686,19 +666,14 @@
       "subcategoria": "",
       "marca": "Panther",
       "genero": "Hombre",
-      "talles": [
-        "L",
-        "2XL"
-      ],
+      "talles": ["L", "2XL"],
       "color": "Fucsia",
       "precio": 50600,
       "precioAnterior": null,
       "descuento": null,
       "descripcion": "",
       "imagenPrincipal": "imagenes/productos/23342.svg",
-      "imagenes": [
-        "imagenes/productos/23342.svg"
-      ],
+      "imagenes": ["imagenes/productos/23342.svg"],
       "stock": true,
       "destacado": false,
       "nuevo": false,
@@ -713,20 +688,14 @@
       "subcategoria": "",
       "marca": "Panther",
       "genero": "Hombre",
-      "talles": [
-        "S",
-        "L",
-        "2XL"
-      ],
+      "talles": ["S", "L", "2XL"],
       "color": "Rojo",
       "precio": 43725,
       "precioAnterior": null,
       "descuento": null,
       "descripcion": "",
       "imagenPrincipal": "imagenes/productos/23373.svg",
-      "imagenes": [
-        "imagenes/productos/23373.svg"
-      ],
+      "imagenes": ["imagenes/productos/23373.svg"],
       "stock": true,
       "destacado": false,
       "nuevo": false,
@@ -741,26 +710,14 @@
       "subcategoria": "",
       "marca": "Panther",
       "genero": "Hombre",
-      "talles": [
-        "S",
-        "2XL"
-      ],
+      "talles": ["S", "2XL"],
       "color": "Rojo",
       "precio": 43725,
       "precioAnterior": null,
       "descuento": null,
       "descripcion": "",
       "imagenPrincipal": "imagenes/productos/23386.svg",
-      "imagenes": [
-        "imagenes/productos/23386.svg",
-        "imagenes/productos/23386_2.svg",
-        "imagenes/productos/23386_3.svg",
-        "imagenes/productos/23386_4.svg",
-        "imagenes/productos/23386_5.svg",
-        "imagenes/productos/23386_6.svg",
-        "imagenes/productos/23386_7.svg",
-        "imagenes/productos/23386_8.svg"
-      ],
+      "imagenes": ["imagenes/productos/23386.svg"],
       "stock": true,
       "destacado": false,
       "nuevo": false,
